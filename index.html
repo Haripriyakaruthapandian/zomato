@@ -1,0 +1,310 @@
+<html>
+    <head>
+        <title>Zomato|Home</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+        
+        <link rel="icon" href="zomato.png">
+<style>
+  .container-fluid{
+    position: absolute;
+    top:75%;
+  }
+    h1{
+        position: absolute;
+        top:13%;
+        font-size: 60px;
+        left:41%;
+        font-style: italic;
+        font-weight: bolder;
+    }
+    .form-control{
+        width:100%;
+        
+    border:none;
+
+    }
+    
+    .temp{
+        color: white;
+        position: absolute;
+        top:28%;
+        left:30%;
+        font-size: 35px;
+
+    }
+    
+    .fa-search{
+      color:#777;
+      border:none;
+    }
+    #card1:hover{
+      scale: 1.1;
+
+    }
+    .input-group{
+      display:flex;
+    }
+    .fa-map-marker{
+      font-size: 25px;
+      color:rgb(225, 96, 118);
+      border:none;
+    }
+    #jumboid {
+  width: 100%;
+}
+.bg-image {
+  position: relative;
+  background: url("zomatobanner.avif") no-repeat center center /cover;
+  height: 450px;
+  background-attachment: fixed;
+}
+.bg-image img {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+header {
+  width: 100%;
+  height: 100%;
+  height: calc(100% - 1px);
+  background-image: url('zomatobaner.avif');
+  background-size: cover;
+}
+.searching{
+  position: absolute;
+  top:40%;
+  left:28%;
+  display:flex;
+  width:50vw;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  background-color: white;
+  padding: 5px 0;
+}
+.searching input{
+  outline:none;
+  border:none;
+  width:80%;
+  padding-left: 10px;
+  color:gray;
+  font-size: 15px;
+ 
+}
+.searching select{
+  color:gray;
+  
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 15px;
+  margin:0%;
+}
+.searching i:first-child{
+  font-size: 25px;
+  color: rgba(252,119,119);
+ 
+ 
+  
+}
+.searching i{
+  color:gray;
+  border-left: 1px solid gray;
+  padding-left: 10px;
+}
+.searching select {
+    background-color: #fff; 
+    width: 20%;
+    
+}
+.footer{
+  position: absolute;
+  top:125%;
+  width:100%;
+  background-color: aliceblue;
+  padding:70px 0;
+  padding-left: 5px;
+}
+ul{
+  list-style: none;
+}
+.row{
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-col{
+  width:25%;
+  
+  
+}
+.footer-col h4{
+  font-size: 18px;
+  color:black;
+}
+.footer-col ul li:not(:last-child){
+  margin-bottom: 10px;
+}
+.footer-col ul li a{
+  font-size: 16px;
+  text-transform: capitalize;
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+
+}
+.footer-col ul li a:hover{
+  padding-left: 8px;
+}
+.social-links i{
+  align-items: center;
+
+height:30px;
+width:30px;
+color:white;
+background-color: black;
+line-height: 30px;
+text-align: center;
+border-radius: 10px;
+margin-left:8%;
+}
+</style>
+    </head>
+    <body>
+      <header>
+        <div class="row">
+          <div class="bg-image" id="jumboid">
+          </div></div>
+          </header>
+    
+        
+            <div class="card-img-overlay">
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            
+            <a class="navbar-brand text-right" href="#">Zomato</a>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarCollapse">
+            <ul class="navbar-nav">
+              <li class="nav-item" >
+                <a class="nav-link" href="#">Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sign Up</a>
+              </li>
+             
+            </ul>
+        
+          </nav>
+          <h1 style="color:white">Zomato</h1>
+          <p class="temp">Discover the best food & drinks in Chennai</p>
+          <br>
+          <div class="searching">
+            <i class="fa fa-map-marker"></i>
+            <select name="city" class="form-control" ng-class="{'no-border': border}">
+              <option name="Nungambakkam, Chennai" value="Nungabakkam, Chennai" selected>Nungabakkam, Chennai</option>
+              <option name="Nungambakkam, Chennai" value="Nungabakkam, Chennai" >T.Nagar, Chennai</option>
+              <option name="Nungambakkam, Chennai" value="Nungabakkam, Chennai" >Kodambakkam, Chennai</option>
+              <option name="Nungambakkam, Chennai" value="Nungabakkam, Chennai">Tambaram, Chennai</option>
+            </select>
+            <i class="fa fa-search"></i>
+            <input type="text" placeholder="Search for restaurant, cuisines and dishes">
+          </div>
+          
+        </div>
+    </div></div>
+        <div class="container-fluid">
+          
+        <div class="row">
+            
+                <div class="card float-left" style="width:22rem;margin-left: 10%;" id="card1">
+                    <img class="card-img-top" src="card_food.jfif" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                      <h4 class="card-title">Order Online</h4>
+                      <p class="card-text">Stay home and order to your doorstep</p>
+                    </div>
+                   
+                  </div>
+                  <div class="card float-left" style="width:22rem;margin-left: 5%;" id="card1">
+                    <img class="card-img-top" src="restaurant.jfif" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                      <h4 class="card-title">Dining</h4>
+                      <p class="card-text">View the City's favourite dining venues</p>
+                    </div>
+                   
+                  </div>
+                  <div class="card float-left" style="width:22rem;margin-left: 5%;" id="card1">
+                    <img class="card-img-top" src="night.jfif" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                      <h4 class="card-title">Night Life and Clubs</h4>
+                      <p class="card-text">Explore the city's top nightlife outlets</p>
+                    </div>
+                   
+                  </div>
+
+            </div>
+        </div>
+            
+          </div>
+          
+       <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="footer-col">
+              <h4>ABOUT ZOMATO</h4>
+                <ul>
+                  <li><a href="#">Who we Are</li>
+                    <li><a href="#">Blog</li>
+                      <li><a href="#">Work With Us</li>
+                        <li><a href="#">Report Fraud</li>
+                          <li><a href="#">Contact Us</li>
+                </ul>
+              
+            </div>
+            <div class="footer-col">
+              <h4>FOR RESTAURANTS</h4>
+                <ul>
+                  <li><a href="#">Apps For You</li>
+                </ul>
+              
+            </div>
+            <div class="footer-col">
+              <h4>FOR ENTERPRISES</h4>
+                <ul>
+                  <li><a href="#">Zomato For Work</li>
+                </ul>
+              
+            </div>
+            <div class="footer-col">
+              <h4>LEARN MORE</h4>
+                <ul>
+                  <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Security</a></li>
+                      <li><a href="#">Terms</a></li>
+
+                </ul>
+              
+            </div>
+            <div class="footer-col">
+              <h4>SOCIAL LINKS</h4>
+              <div class="social-links">
+                
+                  <a href="#"><i class="fa fa-facebook"></i></a>
+                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                  <a href="#"><i class="fa fa-twitter"></i></a>
+                
+              </div>
+            </div>
+          </div>
+        </div>
+        <hr>
+        <div class="last">
+          <center>
+            &copy;Zomato Clone 2022-->Haripriya Karuthapandian
+          </center>
+        </div>
+       </footer>
+          
+          
+
+    </body>
+</html>
